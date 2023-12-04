@@ -329,9 +329,9 @@ docker ps
 ```
 CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS              PORTS               NAMES
 ce4ff40a5456        netshoot:latest   "iperf -s -p 9999"       5 minutes ago       Up 5 minutes                            perf-test-a.1.bil2mo8inj3r9nyrss1g15qav
-
-🐳  → docker run -it --net container:perf-test-a.1.bil2mo8inj3r9nyrss1g15qav netshoot iftop -i eth0
-
+```
+docker run -it --net container:perf-test-a.1.bil2mo8inj3r9nyrss1g15qav netshoot iftop -i eth0
+```
 
 ![iftop.png](img/iftop.png)
 
